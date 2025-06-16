@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arya - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
+    <script src="script.js" defer></script>
+    <script defer>
+      window.addEventListener('DOMContentLoaded', () => {
+        var typed = new Typed("#element", {
+          strings: [
+            "Computer Science Engineering Student with a curiosity for learning, exploring, and executing",
+          ],
+          typeSpeed: 60,
+        });
+      });
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(3, 3, 49);
+        color: white;
+        font-family: "poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        background-color: rgb(1, 1, 23);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(153, 153, 220);
+        font-size: 1.04rem;
+      }
+      .main hr {
+        border: 0;
+        background-color: rgb(199, 157, 238);
+        height: 1.2px;
+        margin: 60px 84px;
+      }
+      .left {
+        font-size: 2rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 130px 0;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 2rem;
+      }
+      .rightSection img {
+        width: 80%;
+      }
+      .purple {
+        color: blueviolet;
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: blueviolet;
+      }
+      .hr style {
+        border: 0;
+        background-color: rgb(101, 37, 160);
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .secondSection {
+        max-width: 70vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection .box {
+        background: white;
+        width: 70vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+      .image-top {
+        width: 40px;
+        position: relative;
+        top: -50px;
+        left: 0;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 80px;
+        color: gray;
+        width: 200px;
+        font-size: 9px;
+        text-align: center;
+      }
+      .vertical-desc ul {
+        list-style-position: inside;
+        padding: 0;
+      }
+      .vertical-desc li {
+        text-align: left;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <b><i>Arya's Portfolio</i></b>
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About </a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is
+          <span class="purple"
+            ><b><i>Arya</i></b></span
+          >
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="picture.png" alt="myimage" />
+        </div>
+      </section>
+      <hr
+        style="
+          border: 0;
+          background-color: rgb(199, 157, 238);
+          height: 1.2px;
+          margin: 40px 84px;
+        "
+      />
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h3>Skills</h3>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="dev.png" alt="" />
+            <div class="vertical-title"><b> Frontend Development </b></div>
+            <div class="vertical-desc">
+              Using HTML5, CSS, JavaSCript made 2 projects
+              <ul>
+                <li>FinTrack to track the</li>
+                <li>And this personal portfolio itself</li>
+              </ul>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="data_ana_graphs-removebg-preview.png" alt="" />
+            <div class="vertical-title"><b> Data Analytics Project </b></div>
+            <div class="vertical-desc">
+              Using Power BI
+              <ul>
+                <li> Designed and developed a dynamic Power BI dashboard for AtliQGrands, focused on hospitality industry analytics ]
+                </li>
+                <li> Performed data cleansing and transformation using PowerQuery </li>
+              </ul>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="graphicss_des-removebg-preview.png" alt="" />
+            <div class="vertical-title"><b> Graphics Design </b></div>
+            <div class="vertical-desc">Using Canva, Figma, Adobe photoshop</div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="content_writer-removebg-preview.png" alt="" />
+            <div class="vertical-title"><b> Content Writer </b></div>
+            <div class="vertical-desc">THM Noida, NCC </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
